@@ -30,8 +30,8 @@ The underpinnings of the Commands functionality may be written in whatever langu
 
 #### Command Line Interface
 * [ ] Using the command `factoid` should return to you a randomly chosen fact. 
-* [ ] Using the command `factoid -n 1` (with flag n specified and number passed) should show you the nth factoid in the bunch
-  * [ ] Please handle a number flag that is out of range appropriately
+* [ ] Using the command `factoid -n 1` (with option n specified and argument integer passed) should show you the nth factoid in the bunch
+  * [ ] Please handle options that are not defined or malformed
 
 #### Packaging 
 * [ ] Provide use of this command via a apt repo style package. 
