@@ -1,12 +1,12 @@
 # Linux Code Test: 'Factoids'
 
 ## Overall Requirements
-Create an Debian or Ubuntu package which, when installed, allows you to type a command which displays a fact about one of your extracurricular interests. Please use this as a chance to showcase your personality.
+Create an apt repo package which, when installed, allows you to type a command which displays a fact about one of your extracurricular interests. Please use this as a chance to showcase your personality.
 
 This command should be invoked via a simple command such as `factoid` and will then display a randomly chosen factoid. See simple example below
 
 ```
-$factoid
+# factoid
 > Hulk Hogan vs Andre the Giant was featured at WrestleMania 3
 ```
 
@@ -26,7 +26,7 @@ We expect this test to take you about 4 - 8 hours. Given that most people are bu
 
 ## Requirements
 
-The underpinnings of the Commands functionality may be written in whatever language you choose, so long as it is operable on Debian or Ubuntu (beware libraries that do not come installed by default)
+The underpinnings of the Commands functionality may be written in whatever language you choose, so long as it is operable on apt repo (beware libraries that do not come installed by default)
 
 #### Command Line Interface
 * [ ] Using the command `factoid` should return to you a randomly chosen fact. 
@@ -34,8 +34,8 @@ The underpinnings of the Commands functionality may be written in whatever langu
   * [ ] Please handle a number flag that is out of range appropriately
 
 #### Packaging 
-* [ ] Provide use of this command via a Debian or Ubuntu style package. 
-* [ ] The package must function on any currently available Debian or Ubuntu OS of your choosing. 
+* [ ] Provide use of this command via a apt repo style package. 
+* [ ] The package must function on any currently available OS of your choosing. 
 
 #### Reproducibility
 * [ ] Use a make file to create your package
