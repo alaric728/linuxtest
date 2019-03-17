@@ -1,0 +1,6 @@
+1. Write my program, probably in python, keeping it simple.
+2. Test program on variety of inputs and make sure it's behaving (letters instead of numbers, unrecognized options, etc.)
+3. Pull down the upstream (? may not be needed for an apt package, consult the debian/apt docs)
+4. Write the info for copyright, compat, rules etc. (Make sure destination follows the rules)
+5. Test the build on my certified* fresh debian install, and then test it again on an actual fresh debian install
+6. Add extra functionality if time allows, maybe some cool colors or text art or something?
