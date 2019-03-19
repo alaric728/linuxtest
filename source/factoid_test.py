@@ -15,16 +15,18 @@ class TestFactoid(unittest.TestCase):
 
     # Test argument supplied is gibberish/random (definitely invalid)
     def test_arg_malformed(self):
+        chars_no_whitespace = string.ascii_letters + string.digits
         chars = string.ascii_letters + string.digits + string.whitespace
-        num_chars = random.randrange(1, 32)
-        args = ''.join(random.choice(chars) for _ in range(num_chars)) # Small chance this is valid
+        num_chars = random.randrange(0, 32)
+        args = random.choice(chars_no_whitespace)
+        args = args.join(random.choice(chars) for _ in range(num_chars))
         with self.assertRaises(SystemExit):
             factoid.main(args.split())
         print("Malformed argument case passed!")
 
     # Test argument supplied is out of bounds
     def test_arg_oob(self):
-        neg_test = ("-n", str(random.randrange(32)*-1))
+        neg_test = ("-n", str(random.randrange(1,32)*-1))
         pos_test = ("-n", str(random.randrange(len(factoid.factoids), 32)))
         with self.assertRaises(SystemExit) as neg_exit:
             factoid.main(neg_test)

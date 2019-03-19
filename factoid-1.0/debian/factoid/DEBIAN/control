@@ -3,6 +3,7 @@ Version: 1.0-1
 Architecture: all
 Maintainer: Christian Kuntz <ckuntz@usc.edu>
 Installed-Size: 13
+Depends: python3:any
 Section: misc
 Priority: optional
 Description: Tells user factoids
