@@ -15,7 +15,7 @@ The point of this test is to understand how you approach a technical problem. Th
 We expect this test to take you about 4 - 8 hours. Given that most people are busy, We'd like to hear back from you within 72 hours of starting.
 
 #### As soon as you begin:
-* [ ] Fork this repository into a public repository on your github/etc account
+* [X] Fork this repository into a public repository on your github/etc account
 
 #### While working on this, please:
 * [ ] Commit early and often. I'll likely be following along with your progress.
@@ -29,16 +29,16 @@ We expect this test to take you about 4 - 8 hours. Given that most people are bu
 The underpinnings of the Commands functionality may be written in whatever language you choose, so long as it is operable on apt repo (beware libraries that do not come installed by default)
 
 #### Command Line Interface
-* [ ] Using the command `factoid` should return to you a randomly chosen fact. 
-* [ ] Using the command `factoid -n 1` (with option n specified and argument integer passed) should show you the nth factoid in the bunch
-  * [ ] Please handle options that are not defined or malformed
+* [X] Using the command `factoid` should return to you a randomly chosen fact. 
+* [X] Using the command `factoid -n 1` (with option n specified and argument integer passed) should show you the nth factoid in the bunch
+  * [X] Please handle options that are not defined or malformed
 
 #### Packaging 
-* [ ] Provide use of this command via a apt repo style package. 
-* [ ] The package must function on any currently available OS of your choosing. 
+* [X] Provide use of this command via a apt repo style package. 
+* [X] The package must function on any currently available OS of your choosing. 
 
 #### Reproducibility
-* [ ] Use a make file to create your package
+* [X] Use a make file to create your package
 
 ## BONUS
 
