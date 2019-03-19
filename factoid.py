@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 import random
 import argparse
 
@@ -8,19 +8,22 @@ factoids = ["Cats have a limited understanding of cause and effect relationships
 "Though often considered the father of geometry, the earliest versions of Euclid's \"Elements\" contain no reference to him as the author, and many of the results in the text originate from earlier mathematicians."]
 
 
-
-def main(test_args = None):
+def make_arg_handler():
     options = range(0, len(factoids))
     parser = argparse.ArgumentParser(description='Outputs a factoid')
     parser.add_argument('-n', type=int, choices=options, default=random.choice(options), 
         help='Desired factoid (Default: random)')
+    return parser
+
+def main(test_args = None):
+    parser = make_arg_handler()
     if test_args is None:
         n = parser.parse_args().n
         print(factoids[n])
     
     else:
         n = parser.parse_args(test_args).n
-        return n, factiods[n]
+        return n, factoids[n]
 
 
 if __name__ == "__main__":
